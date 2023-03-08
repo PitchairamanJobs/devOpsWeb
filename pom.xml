@@ -11,6 +11,10 @@
     <name>A custom project using myfaces 1.2 and facelets</name>
     <url>http://www.myorganization.org</url>
     <properties>
+       <maven.compiler.source>18</maven.compiler.source>
+       <maven.compiler.target>18</maven.compiler.target>
+      </properties>
+    <properties>
         <jsf-myfaces.version>1.2.10</jsf-myfaces.version>
         <jsf-ri.version>1.2_15</jsf-ri.version>        
         <maven.jetty.plugin.version>6.1.22</maven.jetty.plugin.version>
@@ -19,7 +23,17 @@
     	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 	<reporting>
-	    <plugins>
+	  <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.2</version>
+            <configuration>
+                <source>18</source>
+                <target>18</target>
+            </configuration>
+        </plugin>
+    </plugins>
 	        <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
 	            <artifactId>maven-jxr-plugin</artifactId>
