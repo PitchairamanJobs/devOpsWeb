@@ -13,8 +13,6 @@
     <properties>
        <maven.compiler.source>18</maven.compiler.source>
        <maven.compiler.target>18</maven.compiler.target>
-      </properties>
-    <properties>
         <jsf-myfaces.version>1.2.10</jsf-myfaces.version>
         <jsf-ri.version>1.2_15</jsf-ri.version>        
         <maven.jetty.plugin.version>6.1.22</maven.jetty.plugin.version>
