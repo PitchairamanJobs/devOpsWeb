@@ -12,6 +12,10 @@
     <url>http://www.myorganization.org</url>
 
     <properties>
+	    <properties>
+               <maven.compiler.source>16</maven.compiler.source>
+               <maven.compiler.target>16</maven.compiler.target>
+             </properties>
         <jsf-myfaces.version>1.2.10</jsf-myfaces.version>
         <jsf-ri.version>1.2_15</jsf-ri.version>        
         <maven.jetty.plugin.version>6.1.22</maven.jetty.plugin.version>
@@ -21,14 +25,6 @@
     </properties>
 	<reporting>
 	    <plugins>
-		<plugin>
-                     <artifactId>maven-compiler-plugin</artifactId>
-                     <version>3.5.1</version>
-                     <configuration>
-                         <source>1.8</source>
-                         <target>1.8</target>
-                     </configuration>
-                  </plugin>
 	        <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
 	            <artifactId>maven-jxr-plugin</artifactId>
