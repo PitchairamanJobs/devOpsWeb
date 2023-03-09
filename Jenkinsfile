@@ -7,7 +7,7 @@ pipeline {
 stages{
         stage('Build'){
             steps {
-                bat 'mvn clean package'
+                sh 'mvn clean package'
             }
             post {
                 success {
@@ -18,7 +18,7 @@ stages{
         }
     stage ('Deploy to tomcat server'){
         steps{
-            deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://52.66.236.44:8080/')], contextPath: null, war: '**/*.war'
+            deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://13.232.18.79:8080/')], contextPath: null, war: '**/*.war'
         }
     }
     }
